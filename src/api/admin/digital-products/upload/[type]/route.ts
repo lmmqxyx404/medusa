@@ -9,11 +9,7 @@ export const POST = async (
   req: AuthenticatedMedusaRequest,
   res: MedusaResponse
 ) => {
-  console.log('access is');
-  
   const access = req.params.type === "main" ? "private" : "public"
-  console.log('access uis',access);
-  
   const input = req.files as Express.Multer.File[]
 
   if (!input?.length) {
