@@ -1,5 +1,5 @@
 import { model } from "@medusajs/framework/utils"
-import { MediaType } from "../types/index"
+import { MediaType } from "../types"
 import DigitalProduct from "./digital-product"
 
 const DigitalProductMedia = model.define("digital_product_media", {
