@@ -62,6 +62,7 @@ export const POST = async (
     entity: "shipping_profile",
     fields: ["id"],
   })
+  console.log('the id is',shippingProfile.id);
 
   const { result } = await createDigitalProductWorkflow(
     req.scope
